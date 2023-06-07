@@ -5,7 +5,7 @@ default: &default
 
 development:
   <<: *default
-  database: blog_app_development
+  database: blog_app_dev
   username: postgres
   password: Takudzwa95!
   host: localhost
