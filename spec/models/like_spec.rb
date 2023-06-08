@@ -15,7 +15,7 @@ RSpec.describe Like, type: :model do
   subject do
     described_class.new(
       author: user,
-      post: post
+      post:
     )
   end
   it 'is valid with valid attributes' do

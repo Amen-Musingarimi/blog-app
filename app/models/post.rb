@@ -17,5 +17,4 @@ class Post < ApplicationRecord
     post_count = author.posts.count
     author.update_column(:post_counter, post_count.zero? ? 0 : post_count)
   end
-
 end
