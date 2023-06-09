@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  user = User.new(name: 'Something',
-                  photo: 'http://localhost:3000/something.jpg',
-                  bio: 'Something test',
+  user = User.new(name: 'Anything',
+                  photo: 'http://licalhost:3000/anything.jpg',
+                  bio: 'Anything test',
                   post_counter: 0)
   post = Post.new(
-    title: 'Something',
-    text: 'Something test',
+    title: 'Anything',
+    text: 'Anything test',
     author: user,
     comments_counter: 0,
     likes_counter: 0
@@ -24,5 +24,10 @@ RSpec.describe Comment, type: :model do
   it 'it is  valid without a comment' do
     comment.text = nil
     expect(comment).to be_valid
+  end
+
+  it 'it should update post comment counter' do
+    comment.save
+    expect(post.comments_counter).to eq(0)
   end
 end

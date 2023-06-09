@@ -14,7 +14,6 @@ class Post < ApplicationRecord
   private
 
   def update_user_post_counter
-    post_count = author.posts.count
-    author.update_column(:post_counter, post_count.zero? ? 0 : post_count)
+    author.increment!(:post_counter)
   end
 end
