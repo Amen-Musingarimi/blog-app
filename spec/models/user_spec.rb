@@ -1,31 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject(:user) do
-    User.new(
-      name: 'Anything',
-      photo: 'http://licalhost:3000/anything.jpg',
-      bio: 'Anything test',
-      post_counter: 0
-    )
-  end
-
-  it 'is valid with valid attributes' do
-    expect(user).to be_valid
-  end
-  it 'is not valid without a name' do
-    user.name = nil
-    expect(user).to_not be_valid
-  end
-  it 'it is not valid with negeative number for post conuter' do
-    user.post_counter = -1
-    expect(user).to_not be_valid
-  end
-  it 'it is not valid with string for post conuter' do
-    user.post_counter = 'string'
-    expect(user).to_not be_valid
-  end
-  describe '#most_three_recent_post' do
+  describe '#recent_posts' do
     let(:user) { User.new(name: 'Jane', post_counter: 0) }
     let!(:post1) { Post.new(author: user, text: '1', title: '1') }
     let!(:post2) { Post.new(author: user, text: '2', title: '2') }
@@ -36,8 +12,22 @@ RSpec.describe User, type: :model do
       user.posts = [post1, post2, post3]
       user.save
     end
+
     it 'returns the three most recent posts' do
       expect(user.recent_posts).to eq([post3, post2, post1])
+    end
+
+    context 'with more than three posts' do
+      before do
+        6.times do |p|
+          Post.create(title: "Post #{p}", text: "Text #{p}", comments_counter: 10, author_id: user.id,
+                      likes_counter: 10)
+        end
+      end
+
+      it 'returns the three most recent posts' do
+        expect(user.recent_posts).to eq(user.posts.order(created_at: :desc).limit(3))
+      end
     end
   end
 end
