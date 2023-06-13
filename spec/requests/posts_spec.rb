@@ -33,9 +33,9 @@ RSpec.describe 'Posts', type: :request do
       get "/users/#{user.id}/posts/#{post.id}"
       expect(response).to render_template(:show)
     end
-    it "post detail responsed body with correct place holder" do
+    it 'post detail responsed body with correct place holder' do
       get "/users/#{user.id}/posts/#{post.id}"
-      expect(response.body).to include("Here is the details of a post")
+      expect(response.body).to include('Here is the details of a post')
     end
   end
 end
