@@ -1,2 +1,21 @@
-<h1>User Details</h1>
+<div>
+  <div>
+    <img src=<%= @user.photo %> alt="User Image" />
+    <div>
+     <h2><%= @user.name %></h2>
+      <p>Number of posts: <%= @user.post_counter %> </p>
+    </div>
+  </div>
+  <div>
+    <p>Bio</p>
+    <p><%= @user.bio %></p>
+  </div>
+  <% @user.posts.each do | post | %>
+    <div>
+      <p><%= post.title %></p>
+      <p><%= post.text %></p>
+    </div>
+  <% end %>
+</div>
+
 
