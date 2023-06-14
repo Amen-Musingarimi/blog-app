@@ -1,23 +1,23 @@
-<div>
-  <div>
-    <img src=<%= @user.photo %> alt="User Image" />
-    <div>
-     <h2><%= @user.name %></h2>
-      <p>Number of posts: <%= @user.post_counter %> </p>
-    </div>
-  </div>
-  <div>
-    <p>Bio</p>
-    <p><%= @user.bio %></p>
-  </div>
-  <% @user.posts.each do | post | %>
-    <div>
-      <p><%= post.title %></p>
-      <p><%= post.text %></p>
-      <p>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %> </p>
-    </div>
-  <% end %>
-  <button>See All Posts</button>
+
+ <%= render 'shared/user', user:@user%>
+
+<div class="user_bio">
+ <h3>Bio</h3>
+ <p><%= @user.bio %><p>
 </div>
 
+<div class="user_post">
+   <% @user.recent_posts.each do |post| %>
 
+      <%= render 'shared/post', post:post %>
+   <%end%>
+
+</div>
+<div class="button_holder">
+<button>
+ <%= link_to 'See all posts', user_posts_path(@user,@posts) %>
+</button>
+<button>
+ <%= link_to 'Back', :back %>
+</button>
+</div>
