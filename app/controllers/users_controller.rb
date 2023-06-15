@@ -1,9 +1,13 @@
 class UsersController < ApplicationController
   def index
-    # Placeholder HTML for the index view
+    @users = User.all
   end
 
   def show
-    # Placeholder HTML for the show view
+    @user = User.find(params[:id])
+  end
+
+  def current_user
+    @current_user = User.first
   end
 end

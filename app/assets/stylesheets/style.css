@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+/* ---------------------Styling the home page----------------------------- */
+
+.user {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.user_card {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.user_card_image,
+.user_card_detail {
+  display: flex;
+  border-radius: 4px;
+}
+
+.user_card_image {
+  width: 15%;
+  margin-left: 20px;
+  margin-right: 2%;
+  min-width: 100px;
+  background-color: #c3b1e1;
+}
+
+.user_card_detail {
+  width: 80%;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #800080;
+}
+
+.image-placeholder {
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
+}
+
+button > a {
+  text-decoration: none;
+}
+
+.user_card_detail > h2 > a {
+  font-size: 26px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.post_card > h4 > a {
+  font-size: 16px;
+  padding-left: 15px;
+  text-decoration: underline;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.user_card_detail > h2 > a:hover {
+  color: #d3d3d3;
+}
+
+.user_card_detail > p {
+  padding-right: 25px;
+  text-decoration: none;
+  text-align: end;
+}
+
+.number_of_posts_text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.number_of_posts_number {
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.create_post_btn {
+  background-color: #800080;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.create_post_btn:hover {
+  background-color: #702963;
+  font-size: 18px;
+}
+
+/* ---------------------Styling the user details----------------------------- */
+.user_bio,
+.user_post {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  margin: 0 3%;
+}
+
+.user_bio {
+  border-radius: 4px;
+  background-color: #800080;
+}
+
+.user_bio > h3,
+.user_bio > p {
+  padding-left: 15px;
+}
+
+.user_bio > h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.post_card {
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: #800080;
+}
+
+.post_card > h4 > a:hover {
+  color: #d3d3d3;
+  font-size: 16px;
+}
+
+.post_card > p {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.post_counter {
+  padding-right: 20px;
+  text-align: end;
+}
+
+.button_holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: #800080;
+}
+
+button:hover {
+  background-color: #702963;
+  font-size: 17px;
+}
+
+.post_list {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  margin-left: 27px;
+}
+
+.post_comment {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: #bf40bf;
+  margin-bottom: 10px;
+}
+
+.comments_container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #800080;
+  border-radius: 4px;
+}
+
+.username_label {
+  font-size: 12px;
+}
+
+.post_detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.post_detail_card {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  border-radius: 4px;
+  margin-left: 10px;
+  background-color: #800080;
+  padding: 10px 20px;
+}
+
+.post_detail_card_header {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post_text,
+.post_counters {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.post_title_card {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.post_author_name {
+  font-size: 18px;
+}
+
+.post_detail_comment {
+  border-radius: 1px;
+  background-color: #bf40bf;
+  width: 98.5%;
+  margin-left: 11px;
+}
+
+.post_button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #bf40bf;
+  cursor: pointer;
+  margin: 15px 45px 20px 0;
+  align-self: flex-end;
+}
+
+.post_button:hover {
+  background-color: #da70d6;
+  font-size: 15px;
+}
+
+.comment_like_holder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.comment_form_holder {
+  width: 80%;
+  background-color: #800080;
+  margin-right: 21px;
+  margin-bottom: 20px;
+  padding: 0 16px;
+}
+
+.comment_form_holder > h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.comment_form {
+  margin-right: 80px;
+}
+
+.comment_input {
+  height: 60px;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post_form {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  border-radius: 4px;
+  margin-left: 20px;
+  background-color: #800080;
+  padding: 10px 20px;
+}
+
+.post_title_input,
+.post_text_input {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #000;
+}
+
+.post_title_input {
+  width: 30%;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.post_text_input {
+  width: 50%;
+  height: 100px;
+  padding: 14px;
+}

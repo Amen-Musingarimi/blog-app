@@ -1,0 +1,13 @@
+<div class= "user">
+ <div class="user_card">
+<div class="user_card_image">
+<img class="image-placeholder"
+src="<%= user.photo %>"
+/>
+</div>
+ <div class="user_card_detail">
+<h2><%= link_to user.name, user %></h2>
+<p class="number_of_posts_text">Number of posts: <span class="number_of_posts_number"><%= user.post_counter %></span></p>
+</div>
+</div>
+</div>
