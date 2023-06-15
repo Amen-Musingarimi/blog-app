@@ -3,11 +3,11 @@
   <div class="post_detail_card">
 
   <div class="post_detail_card_header">
-    <p class ="post_title_card"> Post # <%=@post.id%> by <%=@post.author.name%></p>
-    <p>Comments: <%=@post.comments_counter%> Likes: <%=@post.likes_counter%></p>
+    <p class ="post_title_card"> Post # <%=@post.id%> by <span class="post_author_name"><%=@post.author.name%></span></p>
+    <p class="post_counters">Comments: <%=@post.comments_counter%> Likes: <%=@post.likes_counter%></p>
   </div>
   <div>
-    <p><%=@post.text%></p>
+    <p class="post_text"><%=@post.text%></p>
   </div>
     </div>
     <% if  !@post.comments.empty?%>

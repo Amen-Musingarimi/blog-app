@@ -213,18 +213,28 @@ button:hover {
   border-radius: 4px;
   margin-left: 10px;
   background-color: #800080;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .post_detail_card_header {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 10px;
+}
+
+.post_text,
+.post_counters {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .post_title_card {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.post_author_name {
+  font-size: 18px;
 }
 
 .post_detail_comment {
@@ -234,63 +244,86 @@ button:hover {
   margin-left: 11px;
 }
 
-.post_title {
-  width: 150%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.post_text {
-  width: 155%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .post_button {
-  border: 1px solid #504d4d;
-  border-radius: 1px;
-  padding: 5px;
-  font-size: 20px;
-  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #bf40bf;
   cursor: pointer;
-  margin-top: 15px;
-  margin-right: 45px;
+  margin: 15px 45px 20px 0px;
   align-self: flex-end;
+}
+
+.post_button:hover {
+  background-color: #da70d6;
+  font-size: 15px;
 }
 
 .comment_like_holder {
   display: flex;
-  flex-direction: row;
-  margin: 0 auto;
+  justify-content: space-between;
   width: 100%;
   padding: 0 10px;
   margin-top: 20px;
 }
 
 .comment_form_holder {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  border: 1px solid #504d4d;
-  border-radius: 1px;
-  background-color: #fff;
+  width: 80%;
+  background-color: #800080;
   margin-right: 21px;
+  margin-bottom: 20px;
+  padding: 0 16px;
 }
 
 .comment_form_holder > h3 {
-  font-size: 20px;
-}
-
-.like_form_holder > h3 {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .comment_form {
-  margin-right: 50px;
+  margin-right: 80px;
 }
 
 .comment_input {
+  height: 60px;
+  outline: none;
   padding: 10px;
   width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post_form {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  border-radius: 4px;
+  margin-left: 20px;
+  background-color: #800080;
+  padding: 10px 20px;
+}
+
+.post_title_input,
+.post_text_input {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #000;
+}
+
+.post_title_input {
+  width: 30%;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.post_text_input {
+  width: 50%;
+  height: 100px;
+  padding: 14px;
 }
