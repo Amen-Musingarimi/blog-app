@@ -90,7 +90,12 @@ To run the project redirecting to the root directory of the project and run the 
  bin/rails server (to run web application)
 
 ```
+### Run tests
 
+To run Linter tests, run the following command:
+```sh
+  rubocop
+```
 ### Test
 
 To test the web app run the following command:
@@ -106,6 +111,12 @@ To test the web app run the following command:
 
 - GitHub: [@githubhandle](https://github.com/Amen-Musingarimi)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/atmusingarimi/)
+
+👤 **Brhanu Hailu**
+
+- GitHub: [@brhanuhailu](https://github.com/brhanuhailu)
+- Twitter: [@tigrayfurtune](https://twitter.com/TigrayCountry)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/brhanu-hailu-85578a246/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

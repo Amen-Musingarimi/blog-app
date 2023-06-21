@@ -35,7 +35,7 @@ RSpec.describe 'Posts', type: :request do
     end
     it 'post detail responsed body with correct place holder' do
       get "/users/#{user.id}/posts/#{post.id}"
-      expect(response.body).to include('Here is the details of a post')
+      expect(response.body).to include('Leave a comment')
     end
   end
 end
