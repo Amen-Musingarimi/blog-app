@@ -22,7 +22,7 @@
 
 # 📰 Blog App <a name="about-project"></a>
 
-**Blog App** Streamline content creation, sharing, and amplification. Intuitive interface, powerful features. Write, publish, and share thoughts, ideas, stories effortlessly. Built with Ruby on Rails.
+**Blog App** Streamline content creation, sharing, and amplification. Intuitive interface, powerful features. Write, publish, and share thoughts, ideas, stories effortlessly. Built with Ruby on Rails. moreover this app used to create posts, add comments, Likes. this action depends on the role of the users. if users have the admin role they have permission to delete posts and comluns.
 
 ## 🛠 Built With <a name="built-with"></a>
 
