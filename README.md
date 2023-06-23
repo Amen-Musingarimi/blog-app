@@ -90,6 +90,11 @@ To run the project redirecting to the root directory of the project and run the 
  bin/rails server (to run web application)
 
 ```
+option two
+```sh
+ bin/rails s (to run web application)
+
+```
 ### Run tests
 
 To run Linter tests, run the following command:
@@ -148,6 +153,6 @@ we would like to thank microverse community for the support and guidance.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Amen-Musingarimi/blog-app/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
