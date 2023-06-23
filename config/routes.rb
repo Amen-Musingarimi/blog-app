@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get 'comments/index'
-      get 'comments/create'
+      post 'comments/create'
       get 'posts/index'
       resources :users, only: [] do
         resources :posts, only: [:index] do
