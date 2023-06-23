@@ -8,7 +8,11 @@ class PostsController < ApplicationController
   def show
     @user = User.find(params[:user_id])
     @post = Post.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    flash[:error] = "Post not found"
+    redirect_to user_posts_path(@user)
   end
+  
 
   def new
     @post = current_user.posts.new
