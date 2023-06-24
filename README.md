@@ -81,6 +81,18 @@ Example command:
   bundle install (install all dependencies)
 
 ```
+### Install
+
+Install this project with:
+
+```sh
+  cd project
+  bundle install
+```
+
+```sh
+  rails new ProgjectName --database= databasename
+```
 
 ### Usage
 
